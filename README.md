@@ -27,6 +27,6 @@
  * Директивы media
  * grid и flex выравнивания
 
-[Ссылка на проект в GitHub Pages](https://ssempusha.github.io/)
+[Ссылка на проект в GitHub Pages](https://ssempusha.github.io/react-mesto-auth/)
 
 [Ссылка на макет Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
