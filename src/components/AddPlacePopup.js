@@ -2,7 +2,6 @@ import React from "react";
 import PopupWithForm from "./PopupWithForm";
 
 function AddPlacePopup({ isOpen, onClose, onAddPlace, renderLoading }) {
-
   const [name, setName] = React.useState("");
   const [link, setLink] = React.useState("");
 
@@ -15,10 +14,10 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, renderLoading }) {
   }
 
   function handleSubmit(e) {
-      e.preventDefault(); 
-      onAddPlace({
-          name,
-          link,
+    e.preventDefault();
+    onAddPlace({
+      name,
+      link,
     });
   }
 
@@ -29,14 +28,14 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, renderLoading }) {
   }, [isOpen]);
 
   return (
-    <PopupWithForm 
+    <PopupWithForm
       title="Новое место"
       name="addin-card"
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
       renderLoading={renderLoading}
-      >
+    >
       <input
         id="place-input"
         required=""
@@ -46,7 +45,7 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, renderLoading }) {
         type="text"
         placeholder="Название"
         name="name"
-        value={name || ''}
+        value={name || ""}
         onChange={handlePlaceName}
       />
       <span id="place-input-error" className="popup__error-input" />
@@ -58,12 +57,12 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, renderLoading }) {
         type="url"
         placeholder="Ссылка на картинку"
         name="link"
-        value={link  || ''}
+        value={link || ""}
         onChange={handleLinkImage}
       />
       <span id="link-input-error" className="popup__error-input" />
     </PopupWithForm>
-  )
+  );
 }
 
 export default AddPlacePopup;

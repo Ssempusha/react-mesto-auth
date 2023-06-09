@@ -8,7 +8,7 @@ function ConfirmDeleteCardPopup({ isOpen, onClose, onCardDelete, renderLoading, 
   }
 
   return (
-    <PopupWithForm 
+    <PopupWithForm
       title="Вы уверены?"
       name="delete-card"
       isOpen={isOpen}
@@ -16,7 +16,7 @@ function ConfirmDeleteCardPopup({ isOpen, onClose, onCardDelete, renderLoading, 
       onSubmit={handleConfirmDeleteClick}
       renderLoading={renderLoading}
     />
-  )
+  );
 }
 
 export default ConfirmDeleteCardPopup;
